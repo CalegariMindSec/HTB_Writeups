@@ -1,0 +1,3 @@
+Domínio: htb.local
+
+Users pego com rpcclient Anonymous login

@@ -1,0 +1,12 @@
+# Nmap 7.92 scan initiated Sun Jan 23 17:59:02 2022 as: nmap -sV --open -Pn -v -T5 -p- -oN fullnamp.txt 10.129.95.233
+Nmap scan report for 10.129.95.233
+Host is up (0.15s latency).
+Not shown: 65534 filtered tcp ports (no-response)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Microsoft IIS httpd 6.0
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Jan 23 18:02:50 2022 -- 1 IP address (1 host up) scanned in 228.46 seconds

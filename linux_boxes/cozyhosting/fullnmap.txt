@@ -1,0 +1,41 @@
+# Nmap 7.93 scan initiated Thu Jan  4 18:56:22 2024 as: nmap -AA -p- -oN fullnmap.txt -v -T5 10.129.229.88
+Warning: 10.129.229.88 giving up on port because retransmission cap hit (2).
+adjust_timeouts2: packet supposedly had rtt of -548701 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -548701 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -548738 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -548738 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -549556 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -549556 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -668448 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -668448 microseconds.  Ignoring time.
+Nmap scan report for 10.129.229.88
+Host is up (0.22s latency).
+Not shown: 65055 closed tcp ports (reset), 478 filtered tcp ports (no-response)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 8.9p1 Ubuntu 3ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   256 4356bca7f2ec46ddc10f83304c2caaa8 (ECDSA)
+|_  256 6f7a6c3fa68de27595d47b71ac4f7e42 (ED25519)
+80/tcp open  http    nginx 1.18.0 (Ubuntu)
+|_http-title: Did not follow redirect to http://cozyhosting.htb
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: nginx/1.18.0 (Ubuntu)
+Device type: general purpose
+Running: Linux 5.X
+OS CPE: cpe:/o:linux:linux_kernel:5.0
+OS details: Linux 5.0
+Uptime guess: 12.529 days (since Sat Dec 23 06:21:14 2023)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=263 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT       ADDRESS
+1   220.98 ms 10.10.14.1
+2   221.24 ms 10.129.229.88
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Jan  4 19:02:25 2024 -- 1 IP address (1 host up) scanned in 362.52 seconds

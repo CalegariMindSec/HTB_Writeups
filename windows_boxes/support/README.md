@@ -101,7 +101,7 @@ smb: \> exit
 
 ​	Ao descompactar o arquivo, percebemos que existe alguns aqruivos de DLL e um arquivo executável.
 
-![](/home/kali/Desktop/HTB/machines/to-do/support/ss/list_files.png)
+![](ss/list_files.png)
 
 ​	A partir desse momento, a box possui dois caminhos para pegar o usuário desse arquivo executável. Podemos fazer análise de tráfego com wireshark ou fazer engenharia reversa no executável.
 

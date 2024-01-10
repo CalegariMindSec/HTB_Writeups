@@ -143,7 +143,7 @@ Commands:
 
 4. Capturar o tráfego e pegar o login utilizado.
 
-   ![](/home/kali/Desktop/HTB/machines/to-do/support/ss/wireshark_credential.png)
+   ![](ss/wireshark_credential.png)
 
 ### Método 2 - Engenharia Reversa e Decrypt
 
@@ -164,11 +164,11 @@ app.config  Properties  UserInfo  UserInfo.Commands  UserInfo.csproj  UserInfo.S
 
 ​	Feito o decompile, podemos analisar o código fonte e ver onde a conexão é feita para podermos pegar o usuário e a senha.
 
-![](/home/kali/Desktop/HTB/machines/to-do/support/ss/connection_ldap.png)
+![](ss/connection_ldap.png)
 
 ​	Após uma análise, podemos descobrir que a senha está encryptada. 
 
-![](/home/kali/Desktop/HTB/machines/to-do/support/ss/encrypted.png)
+![](ss/encrypted.png)
 
 ​	Podemos usar o **chatgp** para escrever um code de decrypt em python3 para facilitar nossa vida. 
 
@@ -225,7 +225,7 @@ domain_computers.html        domain_groups.html     domain_policy.html  domain_t
 
 ​	Feito o dump, podemos analisar os arquivos e ver se achamos algo que seja útil. Após uma pesquisa no arquivo **domain_users.json**, podemos encontrar o que seria uma possível senha de acesso do usuário **support**.
 
-![](/home/kali/Desktop/HTB/machines/to-do/support/ss/info_support.png)
+![](ss/info_support.png)
 
 ​	Ao validar as credenciais, podemos perceber que elas possuem acesso à máquina via winrm e podemos usar isso para logar e pegar a flag de user.
 
@@ -286,15 +286,15 @@ Closing writers
 
 ​	Feito a coleta, fazemos o upload do arquivo no **BloodHound** e analisamos o arquivo. Podemos perceber que a secão **Group Delegated Object Control** mostra um valor de 1 . Este valor mostra se um grupo do qual nosso usuário é membro tem acesso a objetos de controle no domínio. 
 
-![](/home/kali/Desktop/HTB/machines/to-do/support/ss/find_delegated_control.png)
+![](ss/find_delegated_control.png)
 
 ​	Ao clicar no objeto para obter mais informacões, vemos que o grupo **Shared Support Accounts** tem permissão **GenericAll** na máquina.
 
-![](/home/kali/Desktop/HTB/machines/to-do/support/ss/genericall.png)
+![](ss/genericall.png)
 
 ​	No **BloodHound** podemos selecionar esses privilégios e, ao clicar no botão **help**, ter informacões de como explorar essa configuracão. 
 
-![](/home/kali/Desktop/HTB/machines/to-do/support/ss/help_info.png)
+![](ss/help_info.png)
 
 ​	Para a exploracão, precisaremos do **Rubeus**, **Powerview** e **Powermad**.
 

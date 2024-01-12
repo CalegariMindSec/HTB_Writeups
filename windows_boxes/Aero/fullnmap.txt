@@ -1,0 +1,31 @@
+# Nmap 7.93 scan initiated Thu Jan 11 21:54:51 2024 as: nmap -A -sC -Pn -oN fullnmap.txt -p- -T5 -v aerohub.htb
+Nmap scan report for aerohub.htb (10.129.229.128)
+Host is up (0.25s latency).
+Not shown: 65534 filtered tcp ports (no-response)
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Microsoft IIS httpd 10.0
+|_http-title: Aero Theme Hub
+|_http-favicon: Unknown favicon MD5: 556F31ACD686989B1AFCF382C05846AA
+|_http-server-header: Microsoft-IIS/10.0
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running (JUST GUESSING): FreeBSD 6.X (87%), Microsoft Windows 10|2008 (87%)
+OS CPE: cpe:/o:freebsd:freebsd:6.2 cpe:/o:microsoft:windows_10 cpe:/o:microsoft:windows_server_2008:r2
+Aggressive OS guesses: FreeBSD 6.2-RELEASE (87%), Microsoft Windows 10 (87%), Microsoft Windows Server 2008 R2 (85%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 0.005 days (since Thu Jan 11 21:51:58 2024)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=264 (Good luck!)
+IP ID Sequence Generation: Incremental
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT       ADDRESS
+1   265.26 ms 10.10.14.1
+2   265.46 ms aerohub.htb (10.129.229.128)
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Jan 11 21:59:27 2024 -- 1 IP address (1 host up) scanned in 275.61 seconds

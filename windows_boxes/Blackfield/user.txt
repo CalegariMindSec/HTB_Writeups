@@ -1,0 +1,8 @@
+Administrator
+Guest
+Ipwn3dYouCompany
+krbtgt
+lydericlefebvre
+support
+audit2020
+svc_backup

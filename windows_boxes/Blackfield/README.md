@@ -590,7 +590,7 @@ The shadow copy was successfully exposed as E:\.
 ->
 ```
 
- 	Logo em seguida, podemos ir para algum diretório e fazer a cópia. usando **robocopy** 
+Logo em seguida, podemos ir para algum diretório e fazer a cópia usando **robocopy**.
 
 ```powershell
 *Evil-WinRM* PS C:\Temp> ls

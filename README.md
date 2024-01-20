@@ -11,7 +11,7 @@ Some writeups don't have a writeup, they only have a reference writeup.
 | [Access](https://github.com/CalegariMindSec/HTB_Writeups/tree/main/windows_boxes/access) | nmap, ftp, mdb-tools, telnet, runas, DPAPI, impacket-dpapi, SharpDPAPI |    Easy    |
 | [Active](https://github.com/CalegariMindSec/HTB_Writeups/blob/main/windows_boxes/active/) | nmap, smbclient, gpp-decrypt, Kerberoasting, GetUserSPNs, hashcat |    Easy    |
 | [Aero](https://github.com/CalegariMindSec/HTB_Writeups/tree/main/windows_boxes/Aero) | nmap, CVE-2023-38146, CVE-2023-28252, Visual Studio          |   Medium   |
-|                          Blackfield                          | Coming Soon...                                               |    Hard    |
+| [Blackfield](https://github.com/CalegariMindSec/HTB_Writeups/tree/main/windows_boxes/Blackfield) | nmap, smbclient, ASREPRoast, impacket-GetNPUsers, bloodhound-python, bloodhound, netexec, rpcclient, john, pypykatz, evil-winrm, SharpUp, SeBackupPrivilege, Diskshadow, Robocop, ntds.dir, system, impacket-secretsdump |    Hard    |
 | [Blue](https://github.com/CalegariMindSec/HTB_Writeups/tree/main/windows_boxes/blue) | nmap, ms17_010_eternalblue, metasploit                       |    Easy    |
 | [Chatterbox](https://github.com/CalegariMindSec/HTB_Writeups/tree/main/windows_boxes/chatterbox) | nmap, msfvenom, icacls, winpeas, AutoLogon credentials, wmiexec |   Medium   |
 | [Devel](https://github.com/CalegariMindSec/HTB_Writeups/blob/main/windows_boxes/devel/writeup.md) | nmap, msfvenom, searchsploit, MS11-046                       |    Easy    |

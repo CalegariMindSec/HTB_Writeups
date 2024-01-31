@@ -1,9 +1,5 @@
 # Writeup Blackfield
 
-## Sumário
-
-- [Privilege Escalation](#privilege-escalation)
-
 ## Scan
 
 ```bash
@@ -377,8 +373,6 @@ Mode                LastWriteTime         Length Name
 ```
 
 ## Privilege Escalation
-
-<div id='privesc'/>
 
 ​	Após pegarmos shell, podemos enumerar a máquina e, logo no início, descobrir que nosso usuário pertence ao grupo **Backup Operators** e possui o privilégio **SeBackupPrivilege** habilitado.
 

@@ -3,12 +3,14 @@
 ## Sumário
 
 - [Scan](#scan)
-- [Enumeration & Exploitation](#enumeration-&-exploitation)
-  - [Auth as d.klay](#auth-as-d.klay)
-  - []()
-  - []()
-  - []()
-- []()
+- [Enumeration & Exploitation](#enumeration--exploitation)
+  - [Auth as d.klay](#auth-as-dklay)
+  - [Auth as svc_smb](#auth-as-svc_smb)
+  - [Auth as m.lovegod](#auth-as-mlovegod)
+  - [Shell as winrm_user](#shell-as-winrm_user)
+    - [Método Um - Certipy](#método-um---certipy)
+    - [Método Dois - PyWhisker e Gettgtpkinit](#método-dois---pywhisker-e-gettgtpkinit)
+- [Privilege Escalation](#privilege-escalation)
 
 ## Scan
 

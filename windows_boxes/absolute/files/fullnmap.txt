@@ -1,0 +1,116 @@
+# Nmap 7.93 scan initiated Mon Jan 29 16:11:25 2024 as: nmap -A -sC -Pn -oN fullnmap.txt -p- -T5 -v 10.129.229.59
+Warning: 10.129.229.59 giving up on port because retransmission cap hit (2).
+adjust_timeouts2: packet supposedly had rtt of -684268 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -684268 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -54201 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -54201 microseconds.  Ignoring time.
+Nmap scan report for 10.129.229.59
+Host is up (0.22s latency).
+Not shown: 65378 closed tcp ports (reset), 131 filtered tcp ports (no-response)
+PORT      STATE SERVICE       VERSION
+53/tcp    open  domain        Simple DNS Plus
+80/tcp    open  http          Microsoft IIS httpd 10.0
+|_http-server-header: Microsoft-IIS/10.0
+| http-methods: 
+|   Supported Methods: OPTIONS TRACE GET HEAD POST
+|_  Potentially risky methods: TRACE
+|_http-title: Absolute
+88/tcp    open  kerberos-sec  Microsoft Windows Kerberos (server time: 2024-01-30 02:16:02Z)
+135/tcp   open  msrpc         Microsoft Windows RPC
+139/tcp   open  netbios-ssn   Microsoft Windows netbios-ssn
+389/tcp   open  ldap          Microsoft Windows Active Directory LDAP (Domain: absolute.htb0., Site: Default-First-Site-Name)
+| ssl-cert: Subject: commonName=dc.absolute.htb
+| Subject Alternative Name: othername: 1.3.6.1.4.1.311.25.1::<unsupported>, DNS:dc.absolute.htb
+| Issuer: commonName=absolute-DC-CA
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha1WithRSAEncryption
+| Not valid before: 2023-07-17T21:11:52
+| Not valid after:  2024-07-16T21:11:52
+| MD5:   8355ce674d7ee8abe5d1ec4c8482550b
+|_SHA-1: c9cba13ebe47d98940d592e2b9efcfff9ef453e5
+|_ssl-date: 2024-01-30T02:17:18+00:00; +7h00m00s from scanner time.
+445/tcp   open  microsoft-ds?
+464/tcp   open  kpasswd5?
+593/tcp   open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+636/tcp   open  ssl/ldap      Microsoft Windows Active Directory LDAP (Domain: absolute.htb0., Site: Default-First-Site-Name)
+| ssl-cert: Subject: commonName=dc.absolute.htb
+| Subject Alternative Name: othername: 1.3.6.1.4.1.311.25.1::<unsupported>, DNS:dc.absolute.htb
+| Issuer: commonName=absolute-DC-CA
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha1WithRSAEncryption
+| Not valid before: 2023-07-17T21:11:52
+| Not valid after:  2024-07-16T21:11:52
+| MD5:   8355ce674d7ee8abe5d1ec4c8482550b
+|_SHA-1: c9cba13ebe47d98940d592e2b9efcfff9ef453e5
+|_ssl-date: 2024-01-30T02:17:19+00:00; +7h00m00s from scanner time.
+3268/tcp  open  ldap          Microsoft Windows Active Directory LDAP (Domain: absolute.htb0., Site: Default-First-Site-Name)
+| ssl-cert: Subject: commonName=dc.absolute.htb
+| Subject Alternative Name: othername: 1.3.6.1.4.1.311.25.1::<unsupported>, DNS:dc.absolute.htb
+| Issuer: commonName=absolute-DC-CA
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha1WithRSAEncryption
+| Not valid before: 2023-07-17T21:11:52
+| Not valid after:  2024-07-16T21:11:52
+| MD5:   8355ce674d7ee8abe5d1ec4c8482550b
+|_SHA-1: c9cba13ebe47d98940d592e2b9efcfff9ef453e5
+|_ssl-date: 2024-01-30T02:17:18+00:00; +7h00m00s from scanner time.
+3269/tcp  open  ssl/ldap      Microsoft Windows Active Directory LDAP (Domain: absolute.htb0., Site: Default-First-Site-Name)
+| ssl-cert: Subject: commonName=dc.absolute.htb
+| Subject Alternative Name: othername: 1.3.6.1.4.1.311.25.1::<unsupported>, DNS:dc.absolute.htb
+| Issuer: commonName=absolute-DC-CA
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha1WithRSAEncryption
+| Not valid before: 2023-07-17T21:11:52
+| Not valid after:  2024-07-16T21:11:52
+| MD5:   8355ce674d7ee8abe5d1ec4c8482550b
+|_SHA-1: c9cba13ebe47d98940d592e2b9efcfff9ef453e5
+|_ssl-date: 2024-01-30T02:17:19+00:00; +7h00m00s from scanner time.
+5985/tcp  open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+9389/tcp  open  mc-nmf        .NET Message Framing
+47001/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-title: Not Found
+|_http-server-header: Microsoft-HTTPAPI/2.0
+49664/tcp open  msrpc         Microsoft Windows RPC
+49665/tcp open  msrpc         Microsoft Windows RPC
+49666/tcp open  msrpc         Microsoft Windows RPC
+49667/tcp open  msrpc         Microsoft Windows RPC
+49673/tcp open  msrpc         Microsoft Windows RPC
+49678/tcp open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+49679/tcp open  msrpc         Microsoft Windows RPC
+49685/tcp open  msrpc         Microsoft Windows RPC
+49687/tcp open  msrpc         Microsoft Windows RPC
+49699/tcp open  msrpc         Microsoft Windows RPC
+49703/tcp open  msrpc         Microsoft Windows RPC
+Device type: general purpose|specialized
+Running (JUST GUESSING): Microsoft Windows 2012|2016|7|10|2008|Vista (91%)
+OS CPE: cpe:/o:microsoft:windows_server_2012:r2 cpe:/o:microsoft:windows_server_2016 cpe:/o:microsoft:windows_7::sp1 cpe:/o:microsoft:windows_10:1511 cpe:/o:microsoft:windows_server_2008::sp2 cpe:/o:microsoft:windows_vista::sp1:home_premium
+Aggressive OS guesses: Microsoft Windows Server 2012 R2 (91%), Microsoft Windows Server 2016 (86%), Microsoft Windows 7 SP1 (85%), Microsoft Windows Server 2012 Data Center (85%), Microsoft Windows 10 1511 (85%), Microsoft Windows 7 SP1 or Windows Server 2008 SP2 (85%), Microsoft Windows Windows 7 SP1 (85%), Microsoft Windows Vista Home Premium SP1, Windows 7, or Windows Server 2008 (85%), Microsoft Windows Vista SP1 (85%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=260 (Good luck!)
+IP ID Sequence Generation: Busy server or unknown class
+Service Info: Host: DC; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: 6h59m59s, deviation: 0s, median: 6h59m59s
+| smb2-time: 
+|   date: 2024-01-30T02:17:08
+|_  start_date: N/A
+| smb2-security-mode: 
+|   311: 
+|_    Message signing enabled and required
+
+TRACEROUTE (using port 554/tcp)
+HOP RTT       ADDRESS
+1   221.70 ms 10.10.14.1
+2   221.89 ms 10.129.229.59
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Jan 29 16:17:20 2024 -- 1 IP address (1 host up) scanned in 355.11 seconds
